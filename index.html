@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Contribute to tryton</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+                    <h1> How to contribute to tryton</h1>
+                    <h4 class="fragment">(or another open source project)</h4>
+                </section>
+				<section>
+                    <h2> Who am I?</h2>
+                    <h3 class="fragment enfassis">
+                        Sergi Almacellas Abellana</h3>
+                    <ul>
+                        <li class="fragment">(Python &hearts;) Programmer</li>
+                        <li class="fragment">Open source enthusiast</li>
+                        <li class="fragment">Tryton commiter since Nov 2013
+                        </li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>What does contribute mean?</h2>
+                    <p class="fragment">
+                        To give (
+                        <span class="enfassis">
+                            <span class="fragment">money,</span>
+                            <span class="fragment">time, </span>
+                            <span class="fragment">knowledge, </span>
+                            <span class="fragment">assistance, </span>
+                            <span class="fragment">etc. </span>
+                        </span>
+                        ) to a common supply, fund, etc., as for charitable
+                        purposes.
+                    </p>
+                    <p class="fragment">Source:
+                    <a href="http://www.dictionary.com/browse/contribute">
+                    http://www.dictionary.com/browse/contribute</a></p>
+                </section>
+				<section>
+                    <h2>Types of contributions</h2>
+                    <h4>(in open source projects)</h4>
+                    <ul class="enfassis">
+                        <li class="fragment">Coding</li>
+                        <li class="fragment">Translating</li>
+                        <li class="fragment">Documenting</li>
+                        <li class="fragment">Reporting Bugs</li>
+                        <li class="fragment">Testing</li>
+                        <li class="fragment">Suporting other users</li>
+                        <li class="fragment">Discussing new features</li>
+                        <li class="fragment">Donating Money</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Before contributing code</h2>
+                    <ol>
+                        <li class="fragment">
+                            Search existing discussions/issues</li>
+                            <ul class="fragment pre">
+                                <li>
+                                    On the discourse server: <br/>
+                                    <a href="https://discuss.tryton.org/">
+                                    https://discuss.tryton.org/
+                                    </a>
+                                </li>
+                                <li>
+                                    On the bug tracker: <br/>
+                                    <a href="https://bugs.tryton.org">
+                                    https://bugs.tryton.org
+                                    </a>
+                                </li>
+                            </ul>
+                        <li class="fragment">Ask/Discuss on the IRC/ML
+                            <ul class="frament pre">
+                                <li><a href="irc://irc.freenode.net/tryton">
+                                    irc://irc.freenode.net/tryton
+                                </a></li>
+                                <li><a href="http://groups.tryton.org">
+                                    http://groups.tryton.org
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Read contribution rules</li>
+                            <span class="fragment pre">
+                            Patches always on latest development version
+                            </span>
+                        <li class="fragment">Read code style</li>
+                            <span class="fragment pre">
+                            PEP8 (with exceptions), 80cols
+                            </span>
+                        <li class="fragment">Inform about your plans</li>
+                            <span class="fragment pre">
+                                Assign to issue yourself & state=in progress
+                            </span>
+                    </ol>
+                </section>
+				<section>
+                    <h2>Submiting code</h2>
+                    <ol>
+                        <li class="fragment">Clone:
+                            <span class="fragment pre">
+                            hg clone https://hg.tryton.org/trytond
+                            </span>
+                        </li>
+                        <li class="fragment">Modify</li>
+                            <span class="fragment pre">
+                            vi filename.py
+                            </span>
+                        <li class="fragment">Run tests</li>
+                            <span class="fragment pre">
+                            python setup.py test
+                            </span>
+                        <li class="fragment">Upload</li>
+                            <span class="fragment pre">
+                            hg review -m "trytond: Explanation of your change"
+                            </span>
+                        <li class="fragment">Review</li>
+                            <span class="fragment pre">
+                            mutt & browser
+                            </span>
+                        <li class="fragment">Re-Upload</li>
+                            <span class="fragment pre">
+                            hg review -m "fix comments"
+                            </span>
+                        <li class="fragment">Commit</li>
+                            <span class="fragment pre">
+                            Normally by a core developer
+                            </span>
+                    </ol>
+                </section>
+				<section>
+                    <h2>Code Review</h2>
+                    <ul class="enfassis">
+                        <li class="fragment">Before commit</li>
+                        <li class="fragment">Using rietveld:
+                            <br/>
+                            <a class="fragment"
+                                href="https://codereview.tryton.org">
+                                https://codereview.tryton.org
+                            </a>
+                        </li>
+                        <img class="fragment" src="img/codereview.png">
+                    </ul>
+                </section>
+				<section>
+                    <h2>Giving feedback</h2>
+                    <ul class="enfassis">
+                        <li class="fragment">On Other users code</li>
+                        <img class="fragment" src="img/codereview_comment.png">
+                        <li class="fragment">On Discussions and issues</li>
+                        <img class="fragment" src="img/discuss.png">
+                    </ul>
+                </section>
+				<section>
+                    <h2>Translations</h2>
+                    <h4 class="fragment">String freeze 1 month before release
+                    </h4>
+                    <ul class="enfassis">
+                        <li class="fragment">Using pootle:
+                            <a class="fragment"
+                                href="http://poolte.tryton.org">
+                                https://pootle.tryton.org
+                            </a>
+                        </li>
+                        <img class="fragment" src="img/pootle.png">
+                        <li class="fragment">Create suggestions</li>
+                        <li class="fragment">Approved by Language Admins</li>
+                        <li class="fragment">Ask for new languages on bugtracker</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2>Donate</h2>
+                    <ul>
+                        <li class="fragment">Recurring
+                            <ul class="enfassis">
+                                <li class="fragment">Wire Transfer</li>
+                                <li class="fragment">Paypal</li>
+                                <li class="fragment">Bitcoin</li>
+                                <li class="fragment">Flatter</li>
+                                <li class="fragment">Gittip</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">On development
+                            <ul class="enfassis">
+                                <li class="fragment">Indigogo</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="fragment">
+                        All the details in: <br/>
+                        <a class="fragment" href="http://www.tryton.org/foundation/donations.html">
+                        http://www.tryton.org/foundation/donations.html
+                        </a>
+                    </div>
+                </section>
+				<section>
+                    <img src="img/questions.png">
+                </section>
+				<section>
+                    <h1>Thank you!</h1>
+                    <p>The presentation code is avaiable on </p>
+                    <p><a href="http://github.com/pokoli/contribute-to-tryton">
+                        http://github.com/pokoli/contribute-to-tryton
+                    </a></p>
+
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
