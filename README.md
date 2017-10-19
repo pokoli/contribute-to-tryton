@@ -1,6 +1,11 @@
 A presentation on how to contribute to [Tryton](http://www.tryton.org) using
 [reveal.js](http://lab.hakim.se/reveal-js/).
 
+## Video
+
+This presentation was explained on I Jornadas Tryton in Barcelona. You can
+what it on: [https://www.youtube.com/watch?v=-QadhhkY3L4](https://www.youtube.com/watch?v=-QadhhkY3L4)
+
 ## License
 
 MIT licensed
